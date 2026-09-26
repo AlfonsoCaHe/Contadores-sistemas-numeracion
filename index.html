@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contadores en Cilindros 3D Pro</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cilindros Numéricos Multidígito</h1>
+
+    <div class="controls">
+        <button id="btn-toggle">Comenzar</button>
+        <button id="btn-reset" class="btn-secondary">Reset</button>
+        <div class="speed-control">
+            <label for="speed-slider">Frecuencia:</label>
+            <input type="range" id="speed-slider" min="1" max="50" value="5">
+            <span id="speed-val">5 Hz</span>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <!-- BINARIO (8 cilindros) -->
+        <div class="counter-card bin-card">
+            <div class="counter-title">Binario (Base 2 - 8 Bits)</div>
+            <div id="bin-group" class="cylinder-group"></div>
+        </div>
+
+        <!-- OCTAL (3 cilindros) -->
+        <div class="counter-card oct-card">
+            <div class="counter-title">Octal (Base 8 - 3 Dígitos)</div>
+            <div id="oct-group" class="cylinder-group"></div>
+        </div>
+
+        <!-- DECIMAL (3 cilindros) -->
+        <div class="counter-card dec-card">
+            <div class="counter-title">Decimal (Base 10 - 3 Dígitos)</div>
+            <div id="dec-group" class="cylinder-group"></div>
+        </div>
+
+        <!-- HEXADECIMAL (2 cilindros) -->
+        <div class="counter-card hex-card">
+            <div class="counter-title">Hexadecimal (Base 16 - 2 Dígitos)</div>
+            <div id="hex-group" class="cylinder-group"></div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
